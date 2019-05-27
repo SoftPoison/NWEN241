@@ -1,0 +1,46 @@
+Username: williatoma
+Student ID: 300436382
+
+Task 1:
+ 1. float f = 0.1;
+    float* fp = &f;
+ 2. long* func1(int a, int b);
+ 3. char* func2(const char* a);
+ 4. int* ip_array[20];
+ 5. char* str_array[] = { "cyan", "magenta", "yellow", "black" };
+
+Task 2:
+ 1. 1100
+ 2. 1101
+ 3. 1101
+ 4. B
+ 5. C
+
+Task 3:
+ 1. 57   80
+    80   80
+ 2. int int1 = 26;
+    int int2 = 45;
+    int *int1Ptr = &int1;
+    int *int2Ptr = &int2;
+
+    *int1Ptr = 89; //int1: 89, int2: 45, int1Ptr: &int1, int2Ptr: &int2
+    *int2Ptr = 62; //int1: 89, int2: 62, int1Ptr: &int1, int2Ptr: &int2
+    int1Ptr = int2Ptr; //int1: 89, int2: 62, int1Ptr: &int2, int2Ptr: &int2
+    *int1Ptr = 80; //int1: 89, int2: 80, int1Ptr: &int2, int2Ptr: &int2
+    int1 = 57; //int1: 57, int2: 80, int1Ptr: &int2, int2Ptr: &int2
+
+    Thus int1 = 57, int2 = 80, int1Ptr points to int2, and int2Ptr points to int2
+
+Task 4:
+ 1. 1102
+ 2. 1114
+ 3. 1106
+
+Task 5:
+ 1. for (int i = 0; i < 4; i++) {
+        std::cout << *(strPtr + i) << std::endl;
+    }
+ 2. delete[] strPtr;
+
+

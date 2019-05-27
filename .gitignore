@@ -1,0 +1,9 @@
+# ignore compiled files
+*
+!/**/
+!*.*
+!Makefile
+
+
+.vscode/
+
