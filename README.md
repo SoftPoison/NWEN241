@@ -31,11 +31,18 @@ Assignment 2:
 Assignment 3:
 - Task 7:
   - Good job, just failed some tests to remove non-existing records
+    
     test\_task7\_normal\_case0 failed:
+    
     test\_assignment3.cc:244: 1 expected but was 0
+    
     Expected return value : 1
+    
     Actual return value : 1
+    
     Expected: rowsUsed = 4, rowsTotal = 5
+    
     Actual value: rowsUsed = 6, rowsTotal = 15
+    
     Records between the expected and actual tables did not matched at row equal to 1!!
 
