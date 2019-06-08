@@ -8,7 +8,7 @@ typedef struct movie {
     char title[50];
     char director[50];
     unsigned short year; //6 chars
-    unsigned short unknown;
+    unsigned short oscarsWon;
     char country[20];
 } movie_t;
 

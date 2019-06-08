@@ -72,15 +72,15 @@ movielist_t* loadTable(const char* filename) {
             break;
         }
 
-        //Parse unknown
-        char unknown[6];
-        if (nextToken(&lp, ',', unknown, 6))
+        //Parse oscarsWon
+        char oscarsWon[6];
+        if (nextToken(&lp, ',', oscarsWon, 6))
             break;
 
-        //Convert unknown to number
-        char* unknownEnd;
-        m.unknown = strtoul(unknown, &unknownEnd, 10);
-        if (*unknownEnd != '\0') {
+        //Convert oscarsWon to number
+        char* oscarsWonEnd;
+        m.oscarsWon = strtoul(oscarsWon, &oscarsWonEnd, 10);
+        if (*oscarsWonEnd != '\0') {
             error = 2;
             break;
         }
