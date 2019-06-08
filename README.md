@@ -10,6 +10,8 @@ Assignment 2: 93%
 
 Assignment 3: 96%
 
+Assignment 4: 98%
+
 ### Comments
 
 Assignment 1:
@@ -46,3 +48,6 @@ Assignment 3:
     
     Records between the expected and actual tables did not matched at row equal to 1!!
 
+Assignment 4:
+- Task 1 + 2 + 3
+  - no sufficient comments

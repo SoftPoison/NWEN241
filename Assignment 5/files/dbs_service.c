@@ -4,6 +4,7 @@
 #include <netinet/in.h>
 #include <strings.h>
 #include <sys/socket.h>
+#include <sys/wait.h>
 #include <unistd.h>
 
 int runServer(movielist_t* movies) {
@@ -36,6 +37,9 @@ int runServer(movielist_t* movies) {
     unsigned int client_len = sizeof(client_addr);
     int pid;
     while (1) {
+        //Clean up dead children, but don't hang
+        waitpid(-1, NULL, WNOHANG);
+
         //Accept the next client in the queue (and wait for one if none are yet available)
         new_sock_fd = accept(sock_fd, (struct sockaddr*) &client_addr, &client_len);
 
