@@ -12,6 +12,8 @@ Assignment 3: 96%
 
 Assignment 4: 98%
 
+Assignment 5: 100%
+
 ### Comments
 
 Assignment 1:
